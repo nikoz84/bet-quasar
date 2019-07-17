@@ -1,28 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <Default/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Default from "./layout/Default.vue";
 
 export default {
-  name: 'app',
+  name: "App",
+
   components: {
-    HelloWorld
+    Default
+  },
+
+  data() {
+    return {
+      leftDrawerOpen: false //this.$q.platform.is.desktop
+    };
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
