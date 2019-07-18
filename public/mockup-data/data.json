@@ -3,11 +3,17 @@
     { "name": "Início" },
     { "name": "Ao-Vivo e Em tempo real" },
     { "name": "Boxe/MMA" },
+    { "name": "Futebol" },
     { "name": "Ciclismo" },
     { "name": "Corridas de Cavalos" },
     { "name": "Corridas de Galgos" },
     { "name": "Cricket" },
     { "name": "Dardos" },
+    { "name": "Futebol Americano"},
+    { "name": "Golfe"},
+    { "name": "Loto"},
+    { "name": "Sinuca"},
+    { "name": "Tênis"},
     {
       "name": "Especiais",
       "childs": [
@@ -32,5 +38,20 @@
         { "name": "Supercars" }
       ]
     }
+  ],
+  "titles" :[
+    {"name": "Próximas Partidas", "load_in_modal": true, "load_table": true, 
+      "data": [
+          {"name": "Copa do Brasil"}, 
+          {"name": "Clubes de Elite"}, 
+          {"name": "Copa sul Americana"}
+    ]},
+    {"name": "Resultado Final", "load_in_modal": false, "load_table": true, "data": [] },
+    {"name": "Hipótese Dupla", "load_in_modal": false, "load_table": true, "data": [] },
+    {"name": "Gols Mais/Menos", "load_in_modal": false, "load_table": true, "data": [] },
+    {"name": "Para Ambas as Equipas Marcarem", "load_in_modal": false, "load_table": true, "data": [] },
+    {"name": "Resultado/Para Ambas as Equipas Marcarem", "load_in_modal": false, "load_table": true, "data": [] },
+    {"name": "Handicap Asiático e Gols +/-", "load_in_modal": false, "load_table": true, "data": [] },
+    {"name": "Próximas Partidas", "load_in_modal": false, "load_table": true, "data": [] }
   ]
 }

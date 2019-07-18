@@ -25,7 +25,7 @@
 
     <q-drawer v-model="left" side="left" bordered>
       <!-- drawer content -->
-      <LeftSideBar/>
+      <UiLeftSideBar/>
     </q-drawer>
 
     <q-drawer v-model="right" side="right" bordered>
@@ -39,18 +39,18 @@
 
     
     <!-- FOOTER -->
-    <Footer/>
+    <UiFooter/>
    </q-layout> 
 </template>
 <script>
-import Footer from "../components/Footer.vue";
-import LeftSideBar from "../components/LeftSideBar.vue";
+import UiFooter from "../components/UiFooter.vue";
+import UiLeftSideBar from "../components/UiLeftSideBar.vue";
 
 export default {
   name: "Default",
   components: {
-    Footer,
-    LeftSideBar
+    UiFooter,
+    UiLeftSideBar
   },
   data() {
     return {
