@@ -19,12 +19,18 @@
           </div>
         </q-img>
         <q-list bordered >
-          <q-expansion-item
-              expand-separator
-              icon="perm_identity"
-              label="Account settings"
-              caption="John Doe"
-            >
+          <q-expansion-item>
+               <template v-slot:header>
+                <q-item-section avatar>
+                  <q-avatar>
+                    <img src="../assets/sports/001-football.png">
+                  </q-avatar>
+                </q-item-section>
+
+                <q-item-section>
+                  Futebol
+                </q-item-section>
+              </template>
               <q-card>
                 <q-card-section>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
