@@ -1,31 +1,28 @@
-
 // initial state
 const state = {
-    isFullWidthModal: false,
-}
+  isFullWidth: false
+};
 
 // getters
 const getters = {
-  getIsFullWidthModal: (state) => {
-    return state.isFullWidthModal
-  },
-
-}
+  getIsFullWidth: state => {
+    return state.isFullWidth;
+  }
+};
 
 // actions
 const actions = {
-  isFullWidthModal ({ commit }, isFullWidth) {
-    commit("setIsFullWidthModal", isFullWidth);
-  },
-
-}
+  fullWidth({ commit }, isFullWidth) {
+    commit("SET_IS_FULL_WITH", isFullWidth);
+  }
+};
 
 // mutations
 const mutations = {
-  setIsFullWidthModal (state, isFullWidth ) {
-    state.isFullWidthModal = isFullWidth
+  SET_IS_FULL_WITH(state, isFullWidth) {
+    state.isFullWidth = isFullWidth;
   }
-}
+};
 
 export default {
   namespaced: true,
@@ -33,4 +30,4 @@ export default {
   getters,
   actions,
   mutations
-}
+};

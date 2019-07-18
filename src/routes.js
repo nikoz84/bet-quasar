@@ -30,6 +30,16 @@ const routes = [
       title: "Ao Vivo"
     }
   },
+  {
+    path: "/login",
+    name: "login",
+    component: () =>
+      import(/* webpackChunkName: "login" */ "./pages/Login.vue"),
+    meta: {
+      requiresAuth: false,
+      title: "Login"
+    }
+  },
   { path: "*", component: NotFound }
 ];
 

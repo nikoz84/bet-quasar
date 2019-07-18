@@ -1,5 +1,5 @@
 <template>
-<q-footer elevated class="bg-grey-8 text-white" style="padding-top:5px;">
+<q-footer class="bg-grey-8 text-white" style="padding-top:5px;">
       <q-toolbar>
         <!-- Columns are always 50% wide, on mobile and desktop -->
         <div class="column" >

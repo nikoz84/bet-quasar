@@ -20,6 +20,7 @@
         <q-route-tab to="/" label="Inicio" />
         <q-route-tab to="/esportes" label="Esportes" />
         <q-route-tab to="/ao-vivo" label="Ao-Vivo" />
+        <q-route-tab to="/login" label="Login" />
       </q-tabs>
     </q-header>
 
@@ -32,7 +33,7 @@
       <!-- drawer content -->
     </q-drawer>
     <!-- RENDERIZAÇÂO DAS VIEWS -->
-    <q-page-container>
+    <q-page-container >
         <router-view/>
         
     </q-page-container>
