@@ -3,7 +3,9 @@ import App from "./App.vue";
 import "./quasar";
 import VueRouter from "vue-router";
 import routes from "./routes";
+import axios from "axios";
 
+Vue.prototype.$axios = axios;
 Vue.use(VueRouter);
 Vue.config.productionTip = false;
 

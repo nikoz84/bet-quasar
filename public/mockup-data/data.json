@@ -1,0 +1,36 @@
+{
+  "links": [
+    { "name": "Início" },
+    { "name": "Ao-Vivo e Em tempo real" },
+    { "name": "Boxe/MMA" },
+    { "name": "Ciclismo" },
+    { "name": "Corridas de Cavalos" },
+    { "name": "Corridas de Galgos" },
+    { "name": "Cricket" },
+    { "name": "Dardos" },
+    {
+      "name": "Especiais",
+      "childs": [
+        { "name": "Reino Unido" },
+        { "name": "Mundo" },
+        { "name": "América do Norte" },
+        { "name": "Austrália" },
+        { "name": "Itália" }
+      ]
+    },
+    {
+      "name": "Esportes de Inverno",
+      "childs": [{ "name": "Biatlo" }, { "name": "Salto com Esqui" }]
+    },
+    {
+      "name": "Esportes Motorizados",
+      "childs": [
+        { "name": "Fórmula 1" },
+        { "name": "Motociclismo" },
+        { "name": "Nascar" },
+        { "name": "Rali" },
+        { "name": "Supercars" }
+      ]
+    }
+  ]
+}
