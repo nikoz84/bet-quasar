@@ -1,19 +1,19 @@
 {
   "links": [
-    { "name": "Início" },
-    { "name": "Ao-Vivo e Em tempo real" },
-    { "name": "Boxe/MMA" },
-    { "name": "Futebol" },
-    { "name": "Ciclismo" },
-    { "name": "Corridas de Cavalos" },
-    { "name": "Corridas de Galgos" },
-    { "name": "Cricket" },
-    { "name": "Dardos" },
-    { "name": "Futebol Americano"},
-    { "name": "Golfe"},
-    { "name": "Loto"},
-    { "name": "Sinuca"},
-    { "name": "Tênis"},
+    { "name": "Início", "url": "/" },
+    { "name": "Ao-Vivo e Em tempo real", "url": "/ao-vivo" },
+    { "name": "Boxe/MMA", "url": "/esportes/boxe-mma" },
+    { "name": "Futebol", "url": "/esportes/futebol" },
+    { "name": "Ciclismo", "url": "/esportes/ciclismo" },
+    { "name": "Corridas de Cavalos", "url": "/esportes/corridas-de-cabalo" },
+    { "name": "Corridas de Galgos", "url": "/esportes/corridas-de-galgos" },
+    { "name": "Cricket", "url": "/esportes/cricket" },
+    { "name": "Dardos", "url": "/esportes/dardos" },
+    { "name": "Futebol Americano", "url": "/esportes/futebol-americano" },
+    { "name": "Golfe", "url": "/esportes/golfe" },
+    { "name": "Loto", "url": "/esportes/loto" },
+    { "name": "Sinuca", "url": "/esportes/sinuca" },
+    { "name": "Tênis", "url": "/esportes/tenis" },
     {
       "name": "Especiais",
       "childs": [
@@ -25,11 +25,11 @@
       ]
     },
     {
-      "name": "Esportes de Inverno",
+      "name": "esportess de Inverno",
       "childs": [{ "name": "Biatlo" }, { "name": "Salto com Esqui" }]
     },
     {
-      "name": "Esportes Motorizados",
+      "name": "esportess Motorizados",
       "childs": [
         { "name": "Fórmula 1" },
         { "name": "Motociclismo" },
@@ -39,19 +39,58 @@
       ]
     }
   ],
-  "titles" :[
-    {"name": "Próximas Partidas", "load_in_modal": true, "load_table": true, 
+  "titles": [
+    {
+      "name": "Próximas Partidas",
+      "load_in_modal": true,
+      "load_table": true,
       "data": [
-          {"name": "Copa do Brasil"}, 
-          {"name": "Clubes de Elite"}, 
-          {"name": "Copa sul Americana"}
-    ]},
-    {"name": "Resultado Final", "load_in_modal": false, "load_table": true, "data": [] },
-    {"name": "Hipótese Dupla", "load_in_modal": false, "load_table": true, "data": [] },
-    {"name": "Gols Mais/Menos", "load_in_modal": false, "load_table": true, "data": [] },
-    {"name": "Para Ambas as Equipas Marcarem", "load_in_modal": false, "load_table": true, "data": [] },
-    {"name": "Resultado/Para Ambas as Equipas Marcarem", "load_in_modal": false, "load_table": true, "data": [] },
-    {"name": "Handicap Asiático e Gols +/-", "load_in_modal": false, "load_table": true, "data": [] },
-    {"name": "Próximas Partidas", "load_in_modal": false, "load_table": true, "data": [] }
+        { "name": "Copa do Brasil" },
+        { "name": "Clubes de Elite" },
+        { "name": "Copa sul Americana" }
+      ]
+    },
+    {
+      "name": "Resultado Final",
+      "load_in_modal": false,
+      "load_table": true,
+      "data": []
+    },
+    {
+      "name": "Hipótese Dupla",
+      "load_in_modal": false,
+      "load_table": true,
+      "data": []
+    },
+    {
+      "name": "Gols Mais/Menos",
+      "load_in_modal": false,
+      "load_table": true,
+      "data": []
+    },
+    {
+      "name": "Para Ambas as Equipas Marcarem",
+      "load_in_modal": false,
+      "load_table": true,
+      "data": []
+    },
+    {
+      "name": "Resultado/Para Ambas as Equipas Marcarem",
+      "load_in_modal": false,
+      "load_table": true,
+      "data": []
+    },
+    {
+      "name": "Handicap Asiático e Gols +/-",
+      "load_in_modal": false,
+      "load_table": true,
+      "data": []
+    },
+    {
+      "name": "Próximas Partidas",
+      "load_in_modal": false,
+      "load_table": true,
+      "data": []
+    }
   ]
 }

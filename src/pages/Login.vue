@@ -1,7 +1,7 @@
 <template>
   <section class="q-mt-lg row">
     <div class="col-xs col-sm col-md-4"></div>
-      <q-card class="q-gutter-y-sm col-xs-12 col-sm-12 col-md-4" >
+      <q-card class="bg-grey-1 q-gutter-y-sm col-xs-12 col-sm-12 col-md-4" >
         <q-card-section>
           <div class="text-h6 text-center">Login</div>
           <q-input v-model="email" hint="E-mail" />
@@ -21,21 +21,13 @@
   </section>
 </template>
 <script>
-import {
-  QInput,
-  QIcon,
-  QCard,
-  QCardSection,
-  QCardActions,
-  QSeparator
-} from "quasar";
+import { QInput, QCard, QCardSection, QCardActions, QSeparator } from "quasar";
 
 export default {
   name: "Login",
   components: {
     QCard,
     QInput,
-    QIcon,
     QCardSection,
     QCardActions,
     QSeparator
@@ -49,7 +41,4 @@ export default {
 };
 </script>
 <style scoped lang="stylus">
-.q-pa-md {
-  margin-top: 150px;
-}
 </style>

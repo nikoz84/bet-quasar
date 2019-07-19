@@ -1,4 +1,5 @@
 import NotFound from "./pages/Error404.vue";
+import UiSport from "./components/UiSport.vue";
 
 const routes = [
   {
@@ -18,7 +19,14 @@ const routes = [
     meta: {
       requiresAuth: false,
       title: "Esportes"
-    }
+    },
+    children: [
+      {
+        path: ":slug",
+        name: "slug",
+        component: UiSport
+      }
+    ]
   },
   {
     path: "/ao-vivo",

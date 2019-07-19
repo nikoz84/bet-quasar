@@ -1,61 +1,59 @@
 <template>
-    <q-layout view="lHr lpR lfr">
+ <q-layout view="hHh lpR lFr">
 
-    <q-header elevated class="bg-primary text-white">
+    <q-header reveal bordered class="bg-primary text-white">
       <q-toolbar>
         <q-btn dense flat round icon="menu" @click="left = !left" />
 
         <q-toolbar-title>
           <q-avatar>
-            <a href="/" title="inicio">
-                <img src="../assets/logo.png">
-            </a>
+            <img src="../assets/logo.png">
           </q-avatar>
-          YOUR APP
+          Title
         </q-toolbar-title>
+        <q-space />
         <q-btn dense flat round icon="menu" @click="right = !right" />
+        <q-tabs v-model="tab" shrink>
+          <q-tab name="tab1" label="Tab 1" />
+          <q-tab name="tab2" label="Tab 2" />
+          <q-tab name="tab3" label="Tab 3" />
+        </q-tabs>
       </q-toolbar>
-
-      <q-tabs align="left">
-        <q-route-tab to="/" label="Inicio" />
-        <q-route-tab to="/esportes" label="Esportes" />
-        <q-route-tab to="/ao-vivo" label="Ao-Vivo" />
-        <q-route-tab to="/login" label="Login" />
-      </q-tabs>
+      <UiSearch />
     </q-header>
-
-    <q-drawer v-model="left" side="left" bordered>
-      <!-- drawer content -->
-      <UiLeftSideBar/>
+    
+    <q-drawer v-model="left" side="left" overlay bordered>
+      <q-scroll-area class="fit">
+      
+      <UiLeftSideBar />
+      </q-scroll-area>
     </q-drawer>
 
-    <q-drawer v-model="right" side="right" bordered>
+    <q-drawer v-model="right" side="right" overlay behavior="desktop" bordered>
       <!-- drawer content -->
     </q-drawer>
-    <!-- RENDERIZAÇÂO DAS VIEWS -->
-    <q-page-container >
-        <router-view/>
-        
+
+    <q-page-container>
+      <router-view />
     </q-page-container>
 
-    
-    <!-- FOOTER -->
-    <UiFooter/>
-   </q-layout> 
+  </q-layout>
 </template>
 <script>
-import UiFooter from "../components/UiFooter.vue";
+//import UiFooter from "../components/UiFooter.vue";
 import UiLeftSideBar from "../components/UiLeftSideBar.vue";
+import UiSearch from "../components/UiSearch.vue";
 
 export default {
   name: "Default",
   components: {
-    UiFooter,
-    UiLeftSideBar
+    //UiFooter,
+    UiLeftSideBar,
+    UiSearch
   },
   data() {
     return {
-      left: false,
+      left: this.$q.platform.is.desktop,
       right: false,
       text: ""
     };

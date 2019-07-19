@@ -1,15 +1,16 @@
 <template>
-  <Default/>
+  <Dark/>
 </template>
 
 <script>
-import Default from "./layout/Default.vue";
+//import Default from "./layout/Default.vue";
+import Dark from "./layout/Dark.vue";
 
 export default {
   name: "App",
 
   components: {
-    Default
+    Dark
   },
 
   data() {
