@@ -4,6 +4,9 @@
           <q-item-section>
             <q-item-label>{{link.name}}</q-item-label>
           </q-item-section>
+          <q-item-section avatar>
+                <q-avatar text-color="white" icon="grade" />
+             </q-item-section>
         </q-item>  
     </div>
 </template>
