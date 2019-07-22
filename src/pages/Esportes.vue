@@ -7,10 +7,13 @@
       <!-- CADERNETA E TRANSMISÃO AO VIVO -->
       <div class="col-4">
         <q-card dark class="bg-grey-9">
-          <q-card-section class="text-center">
-            <div class="text-h6">Caderneta</div>
-          </q-card-section>
-          <q-separator dark inset />
+          <div class="q-pa-md text-secondary">
+            Caderneta 
+          <q-separator dark/>
+          </div>
+          <div class="q-pa-md text-light text-center">
+            Clique em um preço para adicionar uma seleção
+          </div>
           <q-card-actions></q-card-actions>
         </q-card>
         <q-img

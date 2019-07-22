@@ -2,8 +2,8 @@
     <div class="bg-gray-8">
         <div class="q-pa-md text-light">
            {{ sport_table.name }} 
+           <q-separator dark/>
         </div>
-        <q-separator dark inset />
         <q-list>
           <q-expansion-item v-for="(list, i) in sport_table.lists" :key="i">
                <template v-slot:header>
@@ -22,14 +22,7 @@
                     >
                       <q-card dark class="bg-grey-9">
                         <q-card-section>
-                          <q-table
-                            :title="list.name"
-                            :data="data"
-                            :columns="columns"
-                            row-key="name"
-                            dark
-                            color="amber"
-                          />
+                          
                         </q-card-section>
                 
                         <q-card-actions align="right">
@@ -60,7 +53,7 @@ import { ClosePopup,
   QExpansionItem,
   QCard,
   QCardSection,
-  QCardActions, QTable } from "quasar";
+  QCardActions } from "quasar";
 
 export default {
   name: "UiSport",
@@ -74,12 +67,12 @@ export default {
     QCard,
     QCardSection,
     QCardActions,
-    QSeparator,
-    QTable
+    QSeparator
   },
   data() {
     return {
-      fullWidth: false
+      fullWidth: false,
+      
     };
   },
   created () {
