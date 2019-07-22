@@ -30,7 +30,11 @@
     >
       <q-list dark>
         <!-- BUSCA -->
-        <q-input standout="bg-teal text-white" v-model="termSearch" label="Pesquisar" :dense="false" />
+        <q-input standout="bg-teal-10" v-model="termSearch" label="Pesquisar" :dense="false">
+          <template v-slot:prepend>
+            <q-icon class="text-white" name="search" />
+          </template>
+        </q-input>
         <UiLeftSideBar />  
       </q-list>
     </q-drawer>

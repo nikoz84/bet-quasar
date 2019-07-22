@@ -1,0 +1,154 @@
+{
+    "sport_table": [
+        { 
+          "slug": "futebol", 
+          "name": "Futebol", 
+          "lists": [
+            {
+              "name": "Próximas Partidas",
+              "load_in_modal": true,
+              "load_table": true,
+              "data": [
+                { "name": "Copa do Brasil" },
+                { "name": "Clubes de Elite" },
+                { "name": "Copa sul Americana" }
+              ]
+            },
+            {
+              "name": "Resultado Final",
+              "load_in_modal": false,
+              "load_table": true,
+              "data": [
+                { "name": "Principais Listas" },
+                { "name": "Lista Internacional" },
+                { "name": "Lista do Reino Unido" },
+                { "name": "Lista de Amistosos - Clubes" },
+                { "name": "Amistosos" },
+                { "name": "As Américas" }
+              ]
+            },
+            {
+              "name": "Hipótese Dupla",
+              "load_in_modal": false,
+              "load_table": true,
+              "data": [
+                { "name": "Principais Listas" },
+                { "name": "Internacionais" },
+                { "name": "As Américas" }
+              ]
+            },
+            {
+              "name": "Gols Mais/Menos",
+              "load_in_modal": false,
+              "load_table": true,
+              "data": [
+                { "name": "Principais Listas" },
+                { "name": "Olimpiadas - Classificação" },
+                { "name": "As Américas" }
+              ]
+            },
+            {
+              "name": "Para Ambas as Equipas Marcarem",
+              "load_in_modal": false,
+              "load_table": true,
+              "data": [
+                { "name": "Principais Listas" },
+                { "name": "Interncacionais" },
+                { "name": "Europa" }
+              ]
+            },
+            {
+              "name": "Resultado/Para Ambas as Equipas Marcarem",
+              "load_in_modal": false,
+              "load_table": true,
+              "data": [
+                { "name": "Principais Listas" },
+                { "name": "Internacionais" },
+                { "name": "As Américas" }
+              ]
+            },
+            {
+              "name": "Handicap Asiático e Gols +/-",
+              "load_in_modal": false,
+              "load_table": true,
+              "data": [
+                { "name": "Internacionais" },
+                { "name": "Olimpiadas - Classificação" },
+                { "name": "As Américas" },
+                { "name": "Europa" }
+              ]
+            },
+            {
+              "name": "Apostas na Partida",
+              "load_in_modal": false,
+              "load_table": true,
+              "data": [
+                { "name": "Super Copa da UEFA" },
+                { "name": "Inglaterra" },
+                { "name": "Brasileirão - Série A" },
+                { "name": "Brasil - Campenato Paulista - 2a Divição" },
+                { "name": "UEFA - Liga Europa - Classificação" },
+                { "name": "Liga dos Campeões UEFA - Classificação" }
+              ]
+            }
+          ]
+        },
+        { 
+          "slug": "basquete", 
+          "name": "Basquete", 
+          "lists": [
+            {
+              "name": "WNBA",
+              "load_in_modal": false,
+              "load_table": true,
+              "data": [
+                { "name": "Linhas" },
+                { "name": "Principais - Apostas Especial" },
+                { "name": "Primeiro a Conseguir 20 pontos" },
+                { "name": "Resultado da Partida" }
+              ]
+            },
+            {
+              "name": "Mundial de Sub-19 - Feminino",
+              "load_in_modal": false,
+              "load_table": true,
+              "data": [
+                { "name": "Linhas" },
+                { "name": "Principais - Apostas Especial" },
+                { "name": "Primeiro a Conseguir 20 pontos" },
+                { "name": "Resultado da Partida" },
+                { "name": "Margem de Vitória" },
+                { "name": "Resultado Duplo" }
+              ]
+            },
+            {
+              "name": "Campeonato Europeu de Sub-20",
+              "load_in_modal": false,
+              "load_table": true,
+              "data": [
+                { "name": "Linhas" },
+                { "name": "Principais - Apostas Especial" },
+                { "name": "Primeiro a Conseguir 20 pontos" },
+                { "name": "Resultado da Partida" },
+                { "name": "Margem de Vitória" },
+                { "name": "Resultado Duplo" }
+              ]
+            },
+            {
+              "name": "Internacional",
+              "load_in_modal": false,
+              "load_table": true,
+              "data": [
+                { "name": "Linhas" },
+                { "name": "Principais - Apostas Especial" },
+                { "name": "Primeiro a Conseguir 20 pontos" },
+                { "name": "Resultado da Partida" },
+                { "name": "Margem de Vitória" },
+                { "name": "Resultado Duplo" }
+              ]
+            }
+          ]
+        }
+        
+      ]
+}

@@ -1,7 +1,10 @@
+import axios from "axios";
+
 // initial state
 const state = {
   isFullWidth: false,
-  linksLeftSideBar: []
+  linksLeftSideBar: [],
+  sport_table: []
 };
 
 // getters
@@ -11,6 +14,9 @@ const getters = {
   },
   getLinksLeftSideBar: state => {
     return state.linksLeftSideBar;
+  },
+  getSports: state => {
+    return state.sport_table;
   }
 };
 
@@ -19,8 +25,17 @@ const actions = {
   fullWidth({ commit }, isFullWidth) {
     commit("SET_IS_FULL_WITH", isFullWidth);
   },
-  fetchLinksLeftSideBar({ commit }, links) {
-    commit("SET_LINKS_LEFT_SIDE_BAR", links);
+  async fetchLinksLeftSideBar({ commit }) {
+    let resp = await axios.get("/mockup-data/links.json");
+    commit("SET_LINKS_LEFT_SIDE_BAR", resp.data.links);
+  },
+  async fetchSportTable({ commit }, slug ) {
+    let resp = await axios.get("/mockup-data/sport-table.json");
+    resp.data.sport_table.map(( data ) => {
+        if(data.slug == slug){
+            commit("SET_SPORT_TABLE", data);
+        }
+    })
   }
 };
 
@@ -31,6 +46,9 @@ const mutations = {
   },
   SET_LINKS_LEFT_SIDE_BAR(state, links) {
     state.linksLeftSideBar = links;
+  },
+  SET_SPORT_TABLE(state, sport_table) {
+    state.sport_table = sport_table;
   }
 };
 

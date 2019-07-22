@@ -2,8 +2,9 @@
   "links": [
     { "name": "Início", "url": "/" },
     { "name": "Ao-Vivo e Em tempo real", "url": "/ao-vivo" },
-    { "name": "Boxe/MMA", "url": "/esportes/boxe-mma" },
     { "name": "Futebol", "url": "/esportes/futebol" },
+    { "name": "Basquete", "url": "/esportes/basquete" },
+    { "name": "Boxe/MMA", "url": "/esportes/boxe-mma" },
     { "name": "Ciclismo", "url": "/esportes/ciclismo" },
     { "name": "Corridas de Cavalos", "url": "/esportes/corridas-de-cabalo" },
     { "name": "Corridas de Galgos", "url": "/esportes/corridas-de-galgos" },
@@ -25,11 +26,11 @@
       ]
     },
     {
-      "name": "esportess de Inverno",
+      "name": "Esportes de Inverno",
       "childs": [{ "name": "Biatlo" }, { "name": "Salto com Esqui" }]
     },
     {
-      "name": "esportess Motorizados",
+      "name": "Esportes Motorizados",
       "childs": [
         { "name": "Fórmula 1" },
         { "name": "Motociclismo" },
@@ -37,60 +38,6 @@
         { "name": "Rali" },
         { "name": "Supercars" }
       ]
-    }
-  ],
-  "titles": [
-    {
-      "name": "Próximas Partidas",
-      "load_in_modal": true,
-      "load_table": true,
-      "data": [
-        { "name": "Copa do Brasil" },
-        { "name": "Clubes de Elite" },
-        { "name": "Copa sul Americana" }
-      ]
-    },
-    {
-      "name": "Resultado Final",
-      "load_in_modal": false,
-      "load_table": true,
-      "data": []
-    },
-    {
-      "name": "Hipótese Dupla",
-      "load_in_modal": false,
-      "load_table": true,
-      "data": []
-    },
-    {
-      "name": "Gols Mais/Menos",
-      "load_in_modal": false,
-      "load_table": true,
-      "data": []
-    },
-    {
-      "name": "Para Ambas as Equipas Marcarem",
-      "load_in_modal": false,
-      "load_table": true,
-      "data": []
-    },
-    {
-      "name": "Resultado/Para Ambas as Equipas Marcarem",
-      "load_in_modal": false,
-      "load_table": true,
-      "data": []
-    },
-    {
-      "name": "Handicap Asiático e Gols +/-",
-      "load_in_modal": false,
-      "load_table": true,
-      "data": []
-    },
-    {
-      "name": "Próximas Partidas",
-      "load_in_modal": false,
-      "load_table": true,
-      "data": []
     }
   ]
 }
